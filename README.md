@@ -1,3 +1,7 @@
+# Deploying a React App * to GitHub Pages
+
+In this tutorial, I'll show you how you can [Ccreate a React app and deploy it to GitHub Pages](https://github.com/gitname/react-gh-pages).
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
