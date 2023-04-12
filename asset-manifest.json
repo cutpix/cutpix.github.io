@@ -1,16 +1,21 @@
 {
   "files": {
-    "main.css": "/static/css/main.d1a9e081.css",
-    "main.js": "/static/js/main.22b960d2.js",
+    "main.css": "/static/css/main.9e6be4c5.css",
+    "main.js": "/static/js/main.2d5c6579.js",
     "static/js/787.4335b632.chunk.js": "/static/js/787.4335b632.chunk.js",
-    "static/media/logo.svg": "/static/media/logo.a91631c925e05390c51b7125b442df03.svg",
+    "static/media/bg.jpg": "/static/media/bg.e5c32e4fe94fa5fc4cb4.jpg",
+    "static/media/profile.jpg": "/static/media/profile.ca16ff9fef23044fa0d1.jpg",
+    "static/media/fa-brands-400.ttf": "/static/media/fa-brands-400.150de8eaa454d669c405.ttf",
+    "static/media/Poppins-Regular.ttf": "/static/media/Poppins-Regular.35d26b781dc5fda684cc.ttf",
+    "static/media/Poppins-Medium.ttf": "/static/media/Poppins-Medium.673ed42382ab264e0bf5.ttf",
+    "static/media/Poppins-Bold.ttf": "/static/media/Poppins-Bold.cdb29a5d7ccf57ff05a3.ttf",
     "index.html": "/index.html",
-    "main.d1a9e081.css.map": "/static/css/main.d1a9e081.css.map",
-    "main.22b960d2.js.map": "/static/js/main.22b960d2.js.map",
+    "main.9e6be4c5.css.map": "/static/css/main.9e6be4c5.css.map",
+    "main.2d5c6579.js.map": "/static/js/main.2d5c6579.js.map",
     "787.4335b632.chunk.js.map": "/static/js/787.4335b632.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.d1a9e081.css",
-    "static/js/main.22b960d2.js"
+    "static/css/main.9e6be4c5.css",
+    "static/js/main.2d5c6579.js"
   ]
 }
