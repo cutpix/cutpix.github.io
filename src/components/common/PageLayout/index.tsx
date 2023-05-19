@@ -6,7 +6,7 @@ interface Props {
   // any props that come into the component
 }
 
-const Page = ({ children, ...props }: Props) => {
+const PageLayout = ({ children, ...props }: Props) => {
   return (
     <div className={styles.page}>
       <div className={styles.container}>
@@ -16,4 +16,4 @@ const Page = ({ children, ...props }: Props) => {
   )
 }
 
-export default Page;
+export default PageLayout;
