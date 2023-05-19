@@ -10,9 +10,11 @@ const ProfilePage = () => {
   const [loading, setLoading] = useState<boolean>(true)
 
   useEffect(() => {
-    setTimeout(() => {
-      calculateAge()
-    }, 1000)
+    calculateAge()
+
+    // setTimeout(() => {
+    // calculateAge()
+    // }, 1000)
   }, [])
 
   const calculateAge = () => {
