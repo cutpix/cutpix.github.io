@@ -33,19 +33,18 @@ const ProfilePage = () => {
     <>
       <SEO
         title='Andrii Pavliuk | vCard / Resume / CV'
-        description='I am Andrii Pavliuk, full-stack software engineer from Ukraine, Kiev.' />
-      <div className={styles['animation-background']}>
-        {
-          loading
-            ? (
-              <Canvas>
-                <pointLight position={[10, 10, 10]} />
-                <Loader />
-              </Canvas>
-            )
-            : <PageWrapper age={age} />
-        }
-      </div>
+        description='I am Andrii Pavliuk, full-stack software engineer from Ukraine, Kiev.'
+      />
+      {
+        loading
+          ? (
+            <Canvas>
+              <pointLight position={[10, 10, 10]} />
+              <Loader />
+            </Canvas>
+          )
+          : <PageWrapper age={age} />
+      }
     </>
   )
 }

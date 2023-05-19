@@ -1,5 +1,5 @@
-import { Navigate, Route, Routes } from 'react-router-dom';
-import { ProfilePage } from './pages';
+import { Navigate, Route, Routes } from 'react-router-dom'
+import { ProfilePage } from './pages'
 
 import styles from './App.module.scss'
 
@@ -12,7 +12,7 @@ const App = () => {
         <Route path='/*' element={<Navigate to='/' replace />} />
       </Routes>
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
