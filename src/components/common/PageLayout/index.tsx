@@ -1,6 +1,10 @@
 import React, { ReactNode } from "react";
-
 import styles from './index.module.scss'
+
+interface Props {
+  children?: ReactNode
+  // any props that come into the component
+}
 
 const Page = ({ children, ...props }: Props) => {
   return (
@@ -10,11 +14,6 @@ const Page = ({ children, ...props }: Props) => {
       </div>
     </div>
   )
-}
-
-interface Props {
-  children?: ReactNode
-  // any props that come into the component
 }
 
 export default Page;

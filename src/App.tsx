@@ -1,21 +1,23 @@
 import React, { useState, useEffect } from 'react';
 import { Canvas } from '@react-three/fiber'
 
-import { PageLayout, Content, Loader } from './components/common';
+import { PageLayout, Content, Loader, SEO } from './components/common';
 import { CardStarted, CardInner } from './components/Card';
 
 import styles from './App.module.scss'
 
 const App = () => {
   const [age, setAge] = useState<number>(0)
-  const [loading, setLoading] = useState<boolean>(false)
-
+  const [loading, setLoading] = useState<boolean>(true)
 
   useEffect(() => {
-    setLoading(true)
     setTimeout(() => {
-      setLoading(false)
+      calculateAge()
     }, 1000)
+  }, [])
+
+  const calculateAge = () => {
+    setLoading(true)
 
     const birthDate = new Date(1986, 6, 26)
     const difference = Date.now() - birthDate.getTime()
@@ -23,19 +25,25 @@ const App = () => {
     const age = Math.abs(ageDate.getUTCFullYear() - 1970)
 
     setAge(age);
-  }, [])
+    setLoading(false)
+  }
 
   return (
-    <div className={styles['animation-background']}>
-      {loading ? (
-        <Canvas>
-          <pointLight position={[10, 10, 10]} />
-          <Loader />
-        </Canvas>
-      )
-        : <PageWrapper age={age} />
-      }
-    </div>
+    <>
+      <SEO title='Andrii Pavliuk | vCard / Resume / CV' description='I am Andrii Pavliuk, full-stack software engineer from Ukraine, Kiev.' />
+      <div className={styles['animation-background']}>
+        {
+          loading
+            ? (
+              <Canvas>
+                <pointLight position={[10, 10, 10]} />
+                <Loader />
+              </Canvas>
+            )
+            : <PageWrapper age={age} />
+        }
+      </div>
+    </>
   );
 }
 
@@ -119,8 +127,8 @@ const PageWrapper = ({ age }: any) => {
               </div>
             </div>
           </div>
-        </div>
 
+        </div>
         <div className={styles.clear} />
 
       </Content>
