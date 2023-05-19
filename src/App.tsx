@@ -1,7 +1,7 @@
 import { Navigate, Route, Routes } from 'react-router-dom'
 import { ProfilePage } from './pages'
 
-import videoBg from './assets/video/purple-tech-bg.mp4'
+import videoBg from './assets/video/bg.mp4'
 import styles from './App.module.scss'
 
 const App = () => {
