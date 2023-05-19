@@ -2,9 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Canvas } from '@react-three/fiber'
 
 import { PageLayout, Content, Loader } from './components/common';
-
-import CardStarted from './components/Card/CardStarted';
-import CardInner from './components/Card/CardInner';
+import { CardStarted, CardInner } from './components/Card';
 
 import styles from './App.module.scss'
 
