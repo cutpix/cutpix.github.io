@@ -133,8 +133,6 @@ a {
   }
 }
 
-
-
 .row {
   margin: 0 -30px;
   position: relative;
@@ -147,6 +145,14 @@ a {
   }
 
   &.border-line-v {
+  }
+
+  @media ((max-width: 1199px)) {
+    .col {
+      &.col-6 {
+        width: 49.998% !important;
+      }
+    }
   }
 
   @media ((max-width: 560px)) {
