@@ -3,6 +3,7 @@ import { Canvas } from '@react-three/fiber'
 import { PageLayout, Content, Loader, SEO } from '../components/common';
 import { CardStarted, CardInner } from '../components/Card';
 
+import authorImage from '../assets/img/2pac.jpg'
 import styles from './ProfilePage.module.scss'
 
 const ProfilePage = () => {
@@ -140,6 +141,40 @@ const PageWrapper = ({ age }: any) => {
           </div>
           <div className={styles.clear} />
 
+        </Content>
+
+        <Content name='quote'>
+          <div className={styles.title}>
+            <span className={styles['first-word']}>Q</span>uote
+          </div>
+
+          <div className={styles.row}>
+            <div className={`${styles.col} ${styles['col-d-12']} ${styles['border-line-v']}`}>
+              <div className={styles['quote-items']}>
+                <div className={styles.text}>
+                  <div>
+                    “ Through every dark night, there's a bright day after that.
+                    So no matter how hard it get, stick your chest out, keep ya head up.... and handle it. ”
+                  </div>
+                </div>
+                <div className={styles.author}>
+                  <div className={styles.img}>
+                    <img src={authorImage} alt="2Pac" />
+                  </div>
+                  <div className={styles.info}>
+                    <div className={styles.name}>
+                      Tupac Shakur
+                    </div>
+                    <div className={styles.company}>
+                      Me Against The World
+                    </div>
+                  </div>
+                  <div className={styles.clear} />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className={styles.clear} />
         </Content>
 
       </CardInner>

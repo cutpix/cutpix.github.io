@@ -108,6 +108,20 @@ a {
     }
   }
 
+  @media only screen and (device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape) {
+    &.service-items {
+      &:after {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height: 1px;
+        background: transparent !important;
+      }
+    }
+  }
+
   @media (max-width: 560px) {
     &.service-items {
       &:after {
@@ -298,6 +312,97 @@ a {
             );
           }
         }
+      }
+    }
+
+    &.col-d-12 {
+      width: 99.996%;
+    }
+  }
+
+  .quote-items {
+    position: relative;
+    text-align: center;
+    max-width: 648px;
+    width: 100%;
+
+    .text {
+      color: rgba(255, 255, 255, 0.85);
+      margin-bottom: 30px;
+      padding: 0 30px;
+      position: relative;
+      font-weight: 300;
+      font-style: italic;
+      opacity: 0.65;
+
+      &:before,
+      &:after {
+        filter: invert(0);
+        content: "💫🫘";
+        position: absolute;
+        left: 0px;
+        top: 0px;
+        width: 14px;
+        height: 14px;
+        // background: url(../images/quote.svg) no-repeat;
+        background-size: contain;
+        opacity: 0.65;
+        font-size: 18px;
+        font-style: initial;
+      }
+
+      &:after {
+        content: "💫🫘";
+        left: auto;
+        top: auto;
+        right: 0px;
+        bottom: 0px;
+        transform: scale(-1);
+        -webkit-transform: scale(-1);
+      }
+    }
+
+    .author {
+      .img {
+        margin: 0 auto;
+        display: block;
+        width: 60px;
+
+        img {
+          width: 100%;
+          height: auto;
+          border-radius: 100%;
+          -webkit-border-radius: 100%;
+        }
+      }
+
+      .info {
+        position: relative;
+
+        .name {
+          color: rgba(255, 255, 255, 0.85);
+          margin: 6px 0 0 0;
+          font-size: 17px;
+          font-weight: 500;
+        }
+
+        .company {
+          font-size: 14px;
+          color: #999999;
+          font-weight: 400;
+
+          &:before,
+          &:after {
+            content: "💿";
+            opacity: 0.15;
+            padding: 5px;
+          }
+        }
+
+        // &:after {
+        //   content: "💿";
+        //   opacity: 0.65;
+        // }
       }
     }
   }
