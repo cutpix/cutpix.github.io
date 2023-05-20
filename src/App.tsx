@@ -1,5 +1,5 @@
 import { Navigate, Route, Routes } from 'react-router-dom'
-import { ProfilePage } from './pages'
+import { ProfilePage, SkillsPage } from './pages'
 
 import BackgroundVideo from './assets/video/bg.mp4'
 import styles from './app.module.scss'
@@ -16,7 +16,7 @@ const App = () => {
       </div>
       <Routes>
         <Route path='/' element={<ProfilePage />} />
-        <Route path='/skills' element={null} />
+        <Route path='/skills' element={<SkillsPage />} />
         <Route path='/*' element={<Navigate to='/' replace />} />
       </Routes>
     </>
