@@ -34,7 +34,7 @@ const Header = () => {
                   : isActive ? `${styles.active}` : ''
               }
                 to={item.link}>
-                <span className={`${styles.icon} ${styles.fa} ${styles['fa-circle-info']}`} />
+                <span className={`${styles.icon} ${styles.fa} ${styles[item.icon]}`} />
                 <span className={styles.link}>
                   {item.title}
                 </span>

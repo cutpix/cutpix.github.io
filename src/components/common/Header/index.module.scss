@@ -191,6 +191,12 @@
               }
             }
 
+            &.fa-terminal {
+              &:before {
+                content: "\f120";
+              }
+            }
+
             &.link {
               position: relative;
               left: 0;
