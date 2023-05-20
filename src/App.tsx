@@ -7,13 +7,15 @@ import styles from './App.module.scss'
 const App = () => {
 
   return (
-    <div className={`${styles['animation-background']} ${styles.overlay}}`}>
-      <video className={styles.overlay} src={videoBg} autoPlay loop muted />
+    <>
+      <div className={`${styles['animation-background']} ${styles.overlay}`}>
+        <video src={videoBg} autoPlay loop muted />
+      </div>
       <Routes>
         <Route path='/' element={<ProfilePage />} />
         <Route path='/*' element={<Navigate to='/' replace />} />
       </Routes>
-    </div>
+    </>
   )
 }
 
