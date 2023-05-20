@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Canvas } from '@react-three/fiber'
 import { PageLayout, Content, Loader, SEO, Header } from '../components/common';
-import { CardStarted, CardInner } from '../components/Card';
+import { CardStarted, CardInner } from '../components/card';
 
 import authorImage from '../assets/img/2pac.jpg'
 import styles from './ProfilePage.module.scss'

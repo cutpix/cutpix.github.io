@@ -2,7 +2,7 @@ import { Navigate, Route, Routes } from 'react-router-dom'
 import { ProfilePage } from './pages'
 
 import BackgroundVideo from './assets/video/bg.mp4'
-import styles from './App.module.scss'
+import styles from './app.module.scss'
 
 const App = () => {
 
