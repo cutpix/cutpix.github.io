@@ -111,7 +111,7 @@ const PageWrapper = ({ age }: any) => {
                   <span className={`${styles.fa} ${styles['fa-front']}`} />
                 </div>
                 <div className={styles.name}>
-                  <span>Frontend</span>
+                  <span>Frontend Developer</span>
                 </div>
                 <div className={styles.desc}>
                   <p>
@@ -127,7 +127,7 @@ const PageWrapper = ({ age }: any) => {
                   <span className={`${styles.fa} ${styles['fa-back']}`} />
                 </div>
                 <div className={styles.name}>
-                  <span>Backend</span>
+                  <span>Backend Developer</span>
                 </div>
                 <div className={styles.desc}>
                   <p>
