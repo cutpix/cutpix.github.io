@@ -12,8 +12,9 @@ const App = () => {
         <video src={videoBg} autoPlay loop muted />
       </div>
       <Routes>
-        <Route path='/' element={<ProfilePage />} />
-        <Route path='/*' element={<Navigate to='/' replace />} />
+        <Route path='/profile' element={<ProfilePage />} />
+        <Route path='/skills' element={null} />
+        <Route path='/*' element={<Navigate to='/profile' replace />} />
       </Routes>
     </>
   )

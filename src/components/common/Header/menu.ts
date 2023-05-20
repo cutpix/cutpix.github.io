@@ -1,15 +1,15 @@
-type MenuItem = {
+interface MenuItem {
   title: string;
   link: string;
-};
+}
 
 export const menu: MenuItem[] = [
   {
     title: "Profile",
-    link: "/",
+    link: "/profile",
   },
   {
     title: "Skills",
-    link: "/",
+    link: "/skills",
   },
 ];

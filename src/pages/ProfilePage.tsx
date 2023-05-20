@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Canvas } from '@react-three/fiber'
-import { PageLayout, Content, Loader, SEO } from '../components/common';
+import { PageLayout, Content, Loader, SEO, Header } from '../components/common';
 import { CardStarted, CardInner } from '../components/Card';
 
 import authorImage from '../assets/img/2pac.jpg'
@@ -53,6 +53,7 @@ const ProfilePage = () => {
 const PageWrapper = ({ age }: any) => {
   return (
     <PageLayout>
+      <Header />
       <CardStarted />
       <CardInner>
 
