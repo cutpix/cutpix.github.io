@@ -1,5 +1,4 @@
 import { Link, NavLink } from 'react-router-dom'
-import { TypeAnimation } from 'react-type-animation'
 import { menu } from './menu'
 
 import styles from './index.module.scss'
@@ -8,7 +7,7 @@ const Header = () => {
   return (
     <header className={styles.header}>
 
-      <div className={styles.profile}>
+      {/* <div className={styles.profile}>
         <div className={styles.title}>
           Andrii Pavliuk
         </div>
@@ -22,7 +21,7 @@ const Header = () => {
             repeat={Infinity}
           />
         </div>
-      </div>
+      </div> */}
 
       <div className={`${styles['top-menu']} ${styles['menu-minimal']}`}>
         <ul className={styles.menu}>

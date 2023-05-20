@@ -7,7 +7,7 @@ interface MenuItem {
 export const menu: MenuItem[] = [
   {
     title: "Profile",
-    link: "/profile",
+    link: "/",
     icon: "fa-circle-info",
   },
   {
