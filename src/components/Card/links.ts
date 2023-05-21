@@ -32,7 +32,7 @@ export const socialLinks: SocialLink[] = [
   },
   {
     text: "Telegram",
-    uri: "https://t.me/dirty_coder/",
+    uri: "https://t.me/dirtycoder/",
     fa: "fa-telegram",
   },
   {
