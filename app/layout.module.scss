@@ -1,0 +1,164 @@
+.animation-background {
+  width: 100wh;
+  height: auto;
+  background: linear-gradient(-45deg, #121214, #222226, #19191e, #1e1e23);
+  background-size: 400% 400%;
+  -webkit-animation: Gradient 15s ease infinite;
+  -moz-animation: Gradient 15s ease infinite;
+  animation: Gradient 15s ease infinite;
+
+  @-webkit-keyframes Gradient {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+
+  @-moz-keyframes Gradient {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+
+  @keyframes Gradient {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+
+  video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+    &.video-background {
+      padding: 0;
+      height: 100vh;
+    }
+  }
+
+  &.overlay {
+    position: fixed;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+  }
+}
+
+.page {
+  position: relative;
+  height: 100vh;
+  width: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  margin: 8vh 6vw;
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 84vh;
+  max-width: 1268px;
+  max-height: 674px;
+
+  -webkit-transform: translateX(0px);
+  -moz-transform: translateX(0px);
+  -o-transform: translateX(0px);
+  transform: translateX(0px);
+
+  -moz-transition: all 0.4s ease 0s;
+  -webkit-transition: all 0.4s ease 0s;
+  -o-transition: all 0.4s ease 0s;
+  transition: all 0.4s ease 0s;
+}
+
+@media (max-width: 1023px) {
+  .page {
+    overflow: visible;
+  }
+}
+
+@media (max-height: 700px) {
+  .container {
+    margin-top: 3vh;
+    margin-bottom: 3vh;
+    height: 94vh;
+  }
+}
+
+@media (max-height: 740px) {
+  .container {
+    margin-top: 6vh;
+    margin-bottom: 6vh;
+    height: 88vh;
+  }
+}
+
+@media (max-width: 1300px) {
+  .container {
+    margin: 5vh 3vw;
+    height: 90vh;
+  }
+}
+
+@media (max-width: 1199px) {
+  .page {
+    height: auto;
+    display: block;
+  }
+
+  .container {
+    margin: 0 auto;
+    padding: 0 15px 0 100px;
+    position: relative;
+    top: 20px;
+    left: 0;
+    width: auto;
+    max-width: 99%;
+    max-width: 700px;
+    max-height: initial;
+    height: auto;
+
+    margin-left: auto;
+    margin-right: auto;
+    -webkit-transform: none;
+    -moz-transform: none;
+    -o-transform: none;
+    transform: none;
+  }
+}
+
+@media (max-width: 560px) {
+  .container {
+    margin: 0;
+    top: 0;
+    width: auto;
+    max-width: 92%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 60px 0 0 0;
+  }
+}

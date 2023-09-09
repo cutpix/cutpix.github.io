@@ -2,6 +2,7 @@ import './globals.css'
 import type { Metadata } from 'next'
 import { Open_Sans } from 'next/font/google'
 import { ClerkProvider } from '@clerk/nextjs'
+import styles from './layout.module.scss'
 
 const font = Open_Sans({ subsets: ['latin'] })
 
@@ -18,7 +19,19 @@ export default function RootLayout({
   return (
     <ClerkProvider>
       <html lang="en">
-        <body className={font.className}>{children}</body>
+        <body className={font.className}>
+          <div className={`${styles['animation-background']} ${styles.overlay}`}>
+            <video className={styles['video-background']}
+              preload='auto' autoPlay loop muted playsInline>
+              <source src={(require('../assets/video/bg.mp4'))} type='video/mp4' />
+            </video>
+          </div>
+          <div className={styles.page}>
+            <div className={styles.container}>
+              {children}
+            </div>
+          </div>
+        </body>
       </html>
     </ClerkProvider>
   )
