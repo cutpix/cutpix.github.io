@@ -1,5 +1,6 @@
 import Header from "./components/Header"
 import CardStarted from "./components/CardStarted"
+import CardInner from "./components/CardInner"
 
 const ProfilePage = () => {
 
@@ -8,6 +9,9 @@ const ProfilePage = () => {
     <>
       <Header />
       <CardStarted />
+      <CardInner>
+        
+      </CardInner>
     </>
   )
 }
