@@ -1,5 +1,5 @@
-import CardStarted from "./components/CardStarted"
 import Header from "./components/Header"
+import CardStarted from "./components/CardStarted"
 
 const ProfilePage = () => {
 

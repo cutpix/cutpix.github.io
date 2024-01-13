@@ -1,4 +1,4 @@
-"use client"
+'use client'
 
 import { TypeAnimation } from 'react-type-animation'
 
@@ -12,7 +12,7 @@ const CardStarted = () => {
   return (
     <div className={styles['card-started']}>
       <div className={`${styles.profile} ${styles['no-photo']}`}>
-        <div className={styles.slide} style={{ backgroundImage: `url(${require("../../../assets/img/bg.jpg")})` }}></div>
+        <div className={styles.slide}></div>
         <div className={styles.image}>
           <Image src={profileImage} alt="" />
         </div>
