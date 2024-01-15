@@ -50,7 +50,7 @@ type Link = {
 export const links: Link[] = [
   {
     text: "Download CV",
-    uri: "https://docs.google.com/document/d/1qfGg-L4GhKB3kfNk-Bz7YIKANhIUPJqs/edit?usp=share_link&ouid=105752103974339998414&rtpof=true&sd=true",
+    uri: "https://docs.google.com/document/d/1GI-cAxgIuDnWstGREPIHIfvvVYpaUzoTC-GGIXY4lhI",
   },
   {
     text: "Contact Me",
