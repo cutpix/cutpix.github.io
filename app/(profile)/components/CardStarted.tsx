@@ -2,7 +2,7 @@
 
 import { TypeAnimation } from 'react-type-animation'
 
-import { socialLinks, links } from './links'
+import { socialLinks, links } from '@/lib/links'
 import Image from 'next/image'
 import profileImage from '../../../assets/img/profile.jpg'
 

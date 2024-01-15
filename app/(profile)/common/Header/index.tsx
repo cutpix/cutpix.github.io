@@ -2,9 +2,9 @@
 
 import { usePathname } from 'next/navigation'
 import Link from 'next/link'
-import { menu } from './Menu'
+import { menu } from '@/lib/menu'
 
-import styles from './Header.module.scss'
+import styles from './index.module.scss'
 
 const Header = () => {
   const pathname = usePathname()
