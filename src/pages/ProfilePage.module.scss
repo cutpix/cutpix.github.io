@@ -357,8 +357,8 @@ a {
         top: auto;
         right: 3px;
         bottom: 6px;
-        transform: scale(-1);
         -webkit-transform: scale(-1);
+        transform: scale(-1);
       }
     }
 
@@ -371,8 +371,8 @@ a {
         img {
           width: 100%;
           height: auto;
-          border-radius: 100%;
           -webkit-border-radius: 100%;
+          border-radius: 100%;
         }
       }
 
