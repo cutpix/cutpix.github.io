@@ -1,4 +1,4 @@
-import styles from './index.module.scss'
+import styles from '../shared.module.scss'
 
 interface Props {
   text: string
@@ -7,11 +7,20 @@ interface Props {
 
 const Title = ({ text }: Props) => {
   const hasSpace = text.includes(' ')
-  const [firstWord, ...restWords] = hasSpace ? text.split(' ') : [text]
+
+  if (hasSpace) {
+    const [firstWord, ...restWords] = text.split(' ')
+
+    return (
+      <div className={styles.title}>
+        <span className={styles['first-word']}>{firstWord}</span> {restWords.join(' ')}
+      </div>
+    )
+  }
 
   return (
     <div className={styles.title}>
-      <span className={styles['first-word']}>{firstWord}</span> {hasSpace && restWords.join(' ')}
+      <span className={styles['first-word']}>{text.charAt(0)}</span>{text.substring(1)}
     </div>
   )
 }
