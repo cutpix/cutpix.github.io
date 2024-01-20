@@ -1,10 +1,12 @@
+import { promises as fs } from 'fs'
 import { Header, Content, Title, Row, Column, TextBlock } from './common'
+import { ProfileInfo } from '@/interfaces'
 
-import CardStarted from "./components/CardStarted"
-import CardInner from "./components/CardInner"
+import CardStarted from './components/CardStarted'
+import CardInner from './components/CardInner'
 
-const ProfilePage = () => {
-  const data = getProfileInfo()
+const ProfilePage = async () => {
+  const profile = await getProfileInfo()
 
   return (
     <>
@@ -16,7 +18,7 @@ const ProfilePage = () => {
           <Title text='About Me' />
           <Row>
             <Column className='col-d-6 border-line-v'>
-              <TextBlock text={data.description} />
+              <TextBlock text={profile.about} />
             </Column>
           </Row>
         </Content>
@@ -26,14 +28,11 @@ const ProfilePage = () => {
   )
 }
 
-const getProfileInfo = () => {
-  const description = `I am Andrii Pavliuk, full-stack software engineer from Ukraine, Kyiv.
-  I make the web a more interactive and exciting place by creating applications
-  for the modern 🌍 world. I love working with the latest technologies
-  to build modular and testable projects.`
+const getProfileInfo = async (): Promise<ProfileInfo> => {
+  const file = await fs.readFile(process.cwd() + '/data/profile-info.json', 'utf8')
+  const data: ProfileInfo = JSON.parse(file)
 
-  // Pass the data as props
-  return { description }
+  return data
 }
 
 export default ProfilePage
