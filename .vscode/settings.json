@@ -4,5 +4,17 @@
   "prisma-smart-formatter.prisma.defaultFormatter": "Prisma.prisma",
   "[typescriptreact]": {
     "editor.defaultFormatter": "vscode.typescript-language-features"
+  },
+  "files.exclude": {
+    "**/.git": true,
+    "**/.svn": true,
+    "**/.hg": true,
+    "**/CVS": true,
+    "**/.DS_Store": true,
+    "**/Thumbs.db": true,
+    "**/.idea": true,
+    "**/.vscode": false,
+    "node_modules": true,
+    "jsconfig*": false
   }
 }
