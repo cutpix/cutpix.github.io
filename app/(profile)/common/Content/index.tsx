@@ -1,8 +1,13 @@
+import { clsx } from 'clsx'
+
 import styles from './index.module.scss'
 
 const Content = ({ children, name, ...props }: Props) => {
+  const classNameArray = name ? name.split(' ') : []
+  const combinedClassNames = clsx(styles.content, classNameArray.map(className => styles[className]))
+
   return (
-    <div className={`${styles.content} ${name}`}>
+    <div className={combinedClassNames}>
       {children}
     </div>
   )

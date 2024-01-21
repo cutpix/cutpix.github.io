@@ -1,10 +1,15 @@
 import './globals.css'
 import type { Metadata } from 'next'
-import { Open_Sans } from 'next/font/google'
+import { Poppins } from 'next/font/google'
 import { ClerkProvider } from '@clerk/nextjs'
 import styles from './layout.module.scss'
 
-const font = Open_Sans({ subsets: ['latin'] })
+const poppins = Poppins({
+  subsets: ['latin'],
+  display: 'swap',
+  variable: '--font-poppins',
+  weight: ['100', '200', '300', '400', '500', '600', '700', '800', '900']
+})
 
 export const metadata: Metadata = {
   title: 'Andrii Pavliuk | vCard / Resume / CV',
@@ -19,7 +24,7 @@ export default function RootLayout({
   return (
     <ClerkProvider>
       <html lang="en">
-        <body className={font.className}>
+        <body className={`${poppins.variable} antialiased`}>
           <div className={`${styles['animation-background']} ${styles.overlay}`}>
             <video className={styles['video-background']}
               preload='auto' autoPlay loop muted playsInline>

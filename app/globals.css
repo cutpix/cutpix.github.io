@@ -71,9 +71,9 @@ body {
   margin: 0;
   padding: 0;
   border: none;
-  font-family: -apple-system, BlinkMacSystemFont, "Poppins", "Segoe UI",
-    "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
-    "Helvetica Neue", sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, var(--font-poppins),
+    "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans",
+    "Droid Sans", "Helvetica Neue", sans-serif;
   font-size: 14px;
   color: rgba(255, 255, 255, 0.55);
   background: #26262d;
@@ -102,7 +102,6 @@ p {
 li {
   margin-bottom: 0px;
 }
-
 
 @layer base {
   :root {
