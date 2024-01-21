@@ -1,6 +1,5 @@
-import { promises as fs } from 'fs'
 import { Header, Content, Title, Row, Column, TextBlock, ListInfo } from './common'
-import { ProfileInfo } from '@/interfaces'
+import { getProfileInfo } from '@/lib/profile-info'
 
 import CardStarted from './components/CardStarted'
 import CardInner from './components/CardInner'
@@ -29,35 +28,6 @@ const ProfilePage = async () => {
       </CardInner>
     </>
   )
-}
-
-const getProfileInfo = async () => {
-  const file = await fs.readFile(process.cwd() + '/data/profile-info.json', 'utf8')
-  const data: ProfileInfo = JSON.parse(file)
-
-  const infoList = [
-    {
-      label: "Age",
-      value: data.birthday
-    },
-    {
-      label: "Residence",
-      value: data.residence
-    },
-    {
-      label: "Freelance",
-      value: data.status
-    },
-    {
-      label: "Address",
-      value: data.location
-    }
-  ]
-
-  return {
-    about: data.about,
-    info: infoList
-  }
 }
 
 export default ProfilePage

@@ -5,3 +5,8 @@ export interface ProfileInfo {
   status: string;
   location: string;
 }
+
+export interface ListItem {
+  label: string;
+  value: string;
+}

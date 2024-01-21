@@ -1,8 +1,9 @@
+import { ListItem } from '@/interfaces'
+
 import styles from '../shared.module.scss'
 
 interface Props {
-  items: any[]
-  // any props that come into the component
+  items: ListItem[]
 }
 
 const ListInfo = ({ items }: Props) => {
