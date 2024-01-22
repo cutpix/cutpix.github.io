@@ -6,8 +6,11 @@ const Content = ({ children, name, ...props }: Props) => {
   const classNameArray = name ? name.split(' ') : []
   const combinedClassNames = clsx(styles.content, classNameArray.map(className => styles[className]))
 
+  // Include the name as a class if it exists in styles, otherwise include it directly
+  const dynamicClassName = name && styles[name] ? { [styles[name]]: true } : name ? { [name]: true } : {}
+
   return (
-    <div className={combinedClassNames}>
+    <div className={clsx(combinedClassNames, dynamicClassName)}>
       {children}
     </div>
   )
