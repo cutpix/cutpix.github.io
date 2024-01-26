@@ -1,4 +1,4 @@
-import { Header, Content, Title, Row, Column, TextBlock, ListInfo } from './common'
+import { Header, Content, Title, Row, Column, TextBlock, ListInfo, Clear } from './common'
 import { getProfileInfo } from '@/lib/profile-info'
 
 import CardStarted from './components/CardStarted'
@@ -22,6 +22,7 @@ const ProfilePage = async () => {
             <Column className='col-d-6 border-line-v'>
               <ListInfo items={profile.info} />
             </Column>
+            <Clear />
           </Row>
         </Content>
 
