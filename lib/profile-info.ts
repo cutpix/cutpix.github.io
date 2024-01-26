@@ -1,3 +1,5 @@
+"use server";
+
 import { promises as fs } from "fs";
 
 import { ProfileInfo, ProfileData, ListItem } from "@/interfaces";
