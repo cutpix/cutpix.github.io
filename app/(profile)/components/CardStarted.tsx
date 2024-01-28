@@ -14,7 +14,7 @@ const CardStarted = () => {
       <div className={`${styles.profile} ${styles['no-photo']}`}>
         <div className={styles.slide}></div>
         <div className={styles.image}>
-          <Image src={profileImage} alt="" />
+          <Image src={profileImage} alt="" priority={true} />
         </div>
         <div className={styles.title}>Andrii Pavliuk</div>
         <div className={styles.subtitle}>

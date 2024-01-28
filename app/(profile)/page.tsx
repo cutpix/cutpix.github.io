@@ -1,34 +1,19 @@
-import { Header, Content, Title, Row, Column, TextBlock, ListInfo, Clear } from './common'
-import { getProfileInfo } from '@/lib/profile-info'
+// Import your Client Component
+import ProfilePage from './profile-page'
 
-import CardStarted from './components/CardStarted'
-import CardInner from './components/CardInner'
+import profileService from '@/lib/profile-service'
+import { ProfileData } from '@/interfaces'
 
-const ProfilePage = async () => {
-  const profile = await getProfileInfo()
-
-  return (
-    <>
-      <Header />
-      <CardStarted />
-      <CardInner>
-
-        <Content name='about'>
-          <Title text='About Me' />
-          <Row>
-            <Column className='col-d-6 border-line-v'>
-              <TextBlock text={profile.about} />
-            </Column>
-            <Column className='col-d-6 border-line-v'>
-              <ListInfo items={profile.info} />
-            </Column>
-            <Clear />
-          </Row>
-        </Content>
-
-      </CardInner>
-    </>
-  )
+const getData = async () => {
+  return {
+    about: await profileService.getAboutData(),
+    services: await profileService.getServicesData()
+  }
 }
 
-export default ProfilePage
+export default async function Page() {
+  // Fetch data directly in a Server Component
+  const data: ProfileData = await getData()
+  // Forward fetched data to your Client Component
+  return <ProfilePage data={data} />
+}

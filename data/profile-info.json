@@ -1,7 +1,41 @@
 {
-  "about": "I am Andrii Pavliuk, full-stack software engineer from Ukraine, Kyiv. I make the web a more interactive and exciting place by creating applications for the modern 🌍 world. I love working with the latest technologies to build modular and testable projects.",
-  "birthday": "1986-06-26",
-  "residence": "UA",
-  "status": "Remotely Available",
-  "location": "Kyiv, UA"
+  "about": {
+    "title": "About Me",
+    "description": "I am Andrii Pavliuk, full-stack software engineer from Kyiv, Ukraine. I make the web a more interactive and exciting place by creating applications for the modern 🌍 world. I love working with the latest technologies to build modular and testable projects.",
+    "info": {
+      "list": [
+        {
+          "label": "Age",
+          "value": "1986-06-26"
+        },
+        {
+          "label": "Residence",
+          "value": "UA"
+        },
+        {
+          "label": "Freelance",
+          "value": "Remotely Available"
+        },
+        {
+          "label": "Address",
+          "value": "Kyiv, UA"
+        }
+      ]
+    }
+  },
+  "services": {
+    "title": "My Services",
+    "items": [
+      {
+        "type": "Frontend Developer",
+        "description": "Dedicated and detail-oriented Frontend Developer with 5 years of experience creating and implementing innovative web designs and user experiences. Proficient in HTML, CSS, TypeScript, and modern frontend frameworks. Adept at collaborating with clients and cross-functional teams to drive project success. Passionate about staying up-to-date with the latest technologies and industry trends.",
+        "fa": "fa-front"
+      },
+      {
+        "type": "Backend Developer",
+        "description": "Results-driven Backend Developer with 10 years of experience designing, implementing, testing, and maintaining server-side applications and databases. Proficient in multiple programming languages, databases, and backend frameworks. Adept at collaborating with cross-functional teams to deliver scalable and efficient solutions. Passionate about solving complex technical challenges and staying current with emerging technologies.",
+        "fa": "fa-back"
+      }
+    ]
+  }
 }
