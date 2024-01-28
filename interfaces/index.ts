@@ -5,10 +5,10 @@ export interface ProfileData {
 
 export interface PageData {
   title: string;
-  description: string;
 }
 
 export interface AboutData extends PageData {
+  description: string;
   info: {
     list: ListItem[];
   };
