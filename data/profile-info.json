@@ -1,7 +1,7 @@
 {
   "about": {
     "title": "About Me",
-    "description": "I am Andrii Pavliuk, full-stack software engineer from Kyiv, Ukraine. I make the web a more interactive and exciting place by creating applications for the modern 🌍 world. I love working with the latest technologies to build modular and testable projects.",
+    "description": "A Full-stack web developer, who wants to build amazing things for the 🌍 world. I love working with the latest technologies to build modular and testable apps.",
     "info": {
       "list": [
         {
@@ -28,14 +28,23 @@
     "items": [
       {
         "type": "Frontend Developer",
-        "description": "Dedicated and detail-oriented Frontend Developer with 5 years of experience creating and implementing innovative web designs and user experiences. Proficient in HTML, CSS, TypeScript, and modern frontend frameworks. Adept at collaborating with clients and cross-functional teams to drive project success. Passionate about staying up-to-date with the latest technologies and industry trends.",
+        "description": "Dedicated and detail-oriented Frontend Developer with 5 years of experience creating and implementing innovative web designs and user experiences. Proficient in HTML, CSS, TypeScript, and modern frontend frameworks.",
         "fa": "fa-front"
       },
       {
         "type": "Backend Developer",
-        "description": "Results-driven Backend Developer with 10 years of experience designing, implementing, testing, and maintaining server-side applications and databases. Proficient in multiple programming languages, databases, and backend frameworks. Adept at collaborating with cross-functional teams to deliver scalable and efficient solutions. Passionate about solving complex technical challenges and staying current with emerging technologies.",
+        "description": "Results-driven Backend Developer with 10 years of extensive development experience in the .NET technology stack, with strong architecture & coding skills.",
         "fa": "fa-back"
       }
     ]
+  },
+  "quote": {
+    "title": "Quote",
+    "resource": "Me Against The World",
+    "text": "“ Through every dark night, there's a bright day after that. So no matter how hard it get, stick your chest out, keep ya head up.... and handle it. ”",
+    "author": {
+      "name": "Tupac Shakur",
+      "imageUrl": "/img/2pac.jpg"
+    }
   }
 }

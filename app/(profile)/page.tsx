@@ -7,7 +7,8 @@ import { ProfileData } from '@/interfaces'
 const getData = async () => {
   return {
     about: await profileService.getAboutData(),
-    services: await profileService.getServicesData()
+    services: await profileService.getServicesData(),
+    quote: await profileService.getQuoteData()
   }
 }
 

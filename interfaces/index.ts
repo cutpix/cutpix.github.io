@@ -1,6 +1,7 @@
 export interface ProfileData {
   about: AboutData;
   services: ServicesData;
+  quote: QuoteData;
 }
 
 export interface PageData {
@@ -16,6 +17,15 @@ export interface AboutData extends PageData {
 
 export interface ServicesData extends PageData {
   items: ServiceType[];
+}
+
+export interface QuoteData extends PageData {
+  resource: string;
+  text: string;
+  author: {
+    name: string;
+    imageUrl: string;
+  };
 }
 
 export interface ServiceType {

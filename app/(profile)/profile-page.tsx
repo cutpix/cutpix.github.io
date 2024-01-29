@@ -1,10 +1,11 @@
-import { Header, Content, Title, Row, Column, TextBlock, ListInfo, Clear } from './common'
-
+import { Header } from './common'
 import CardStarted from './components/CardStarted'
 import CardInner from './components/CardInner'
 import About from './components/About'
-import { ProfileData } from '@/interfaces'
 import Services from './components/Services'
+import Quote from './components/Quote'
+
+import { ProfileData } from '@/interfaces'
 
 const ProfilePage = async ({ data }: { data: ProfileData }) => {
   return (
@@ -14,6 +15,7 @@ const ProfilePage = async ({ data }: { data: ProfileData }) => {
       <CardInner>
         <About data={data.about} />
         <Services data={data.services} />
+        <Quote data={data.quote} />
       </CardInner>
     </>
   )

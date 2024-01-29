@@ -1,4 +1,4 @@
-import { ProfileData, AboutData, ServicesData } from "@/interfaces";
+import { ProfileData, AboutData, ServicesData, QuoteData } from "@/interfaces";
 import { promises as fs } from "fs";
 import moment from "moment";
 
@@ -22,6 +22,11 @@ class ProfileService {
   public async getServicesData(): Promise<ServicesData> {
     const { services } = await this.readDataFile<ProfileData>(this.filename);
     return services;
+  }
+
+  public async getQuoteData(): Promise<QuoteData> {
+    const { quote } = await this.readDataFile<ProfileData>(this.filename);
+    return quote;
   }
 
   private async readDataFile<T>(filename: string): Promise<T> {

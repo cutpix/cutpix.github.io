@@ -10,15 +10,15 @@ const Content = ({ children, name, ...props }: Props) => {
   const dynamicClassName = name && styles[name] ? { [styles[name]]: true } : name ? { [name]: true } : {}
 
   return (
-    <div className={clsx(combinedClassNames, dynamicClassName)}>
+    <div className={clsx(combinedClassNames, dynamicClassName)} {...props}>
       {children}
     </div>
   )
 }
 
 interface Props {
-  children?: React.ReactNode,
-  name?: string
+  children?: React.ReactNode;
+  name?: string;
   // any props that come into the component
 }
 
