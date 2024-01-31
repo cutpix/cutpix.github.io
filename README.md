@@ -1,4 +1,4 @@
-[![wakatime](https://wakatime.com/badge/github/cutpix/bubble-gun.svg)](https://wakatime.com/badge/github/cutpix/bubble-gun)
+[![wakatime](https://wakatime.com/badge/github/cutpix/cutpix.github.io.svg)](https://wakatime.com/badge/github/cutpix/cutpix.github.io)
 
 # Deploying a React App * to GitHub Pages
 
