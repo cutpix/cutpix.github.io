@@ -1,3 +1,5 @@
+[![wakatime](https://wakatime.com/badge/github/cutpix/bubble-gun.svg)](https://wakatime.com/badge/github/cutpix/bubble-gun)
+
 # Deploying a React App * to GitHub Pages
 
 [In this tutorial, I'll show you how you can create a React app and deploy it to GitHub Pages](https://github.com/gitname/react-gh-pages).
